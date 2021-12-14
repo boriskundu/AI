@@ -1,2 +1,2 @@
 # Python
-This repository contains my Machine Learning implementations.
+This repository contains my solution implementations in Python.
