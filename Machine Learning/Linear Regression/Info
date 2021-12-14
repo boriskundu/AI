@@ -1,1 +1,4 @@
 This directory contains different Linear Regression implementations.
+
+LinearRegression_NormalEquation.py - It uses normal equation to predict insurance premium.
+LinearRegression_GradientDescent.py - It uses batch, mini-batch and stocahstic gradient descent to predict insurance premium.
