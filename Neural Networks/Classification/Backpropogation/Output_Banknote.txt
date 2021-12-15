@@ -1,0 +1,78 @@
+====================================================================================================
+Visualizing Dataset:
+Info:
+<bound method DataFrame.info of       variance  skewness  curtosis  entropy  class
+0      3.62160   8.66610   -2.8073 -0.44699      0
+1      4.54590   8.16740   -2.4586 -1.46210      0
+2      3.86600  -2.63830    1.9242  0.10645      0
+3      3.45660   9.52280   -4.0112 -3.59440      0
+4      0.32924  -4.45520    4.5718 -0.98880      0
+...        ...       ...       ...      ...    ...
+1367   0.40614   1.34920   -1.4501 -0.55949      1
+1368  -1.38870  -4.87730    6.4774  0.34179      1
+1369  -3.75030 -13.45860   17.5932 -2.77710      1
+1370  -3.56370  -8.38270   12.3930 -1.28230      1
+1371  -2.54190  -0.65804    2.6842  1.19520      1
+
+[1372 rows x 5 columns]>
+Head:
+   variance  skewness  curtosis  entropy  class
+0   3.62160    8.6661   -2.8073 -0.44699      0
+1   4.54590    8.1674   -2.4586 -1.46210      0
+2   3.86600   -2.6383    1.9242  0.10645      0
+3   3.45660    9.5228   -4.0112 -3.59440      0
+4   0.32924   -4.4552    4.5718 -0.98880      0
+====================================================================================================
+Testing for the Best Squashing Function:
+
+Result with Eta 0.01:
+        Accuracy of  'Sigmoid' activation function with 4 hidden neurons is 88.04100227790433%
+        Accuracy of     'Tanh' activation function with 4 hidden neurons is 98.0637813211845%
+Result with Eta 0.02:
+        Accuracy of  'Sigmoid' activation function with 4 hidden neurons is 90.31890660592255%
+        Accuracy of     'Tanh' activation function with 4 hidden neurons is 97.26651480637814%
+Result with Eta 0.03:
+        Accuracy of  'Sigmoid' activation function with 4 hidden neurons is 91.79954441913439%
+        Accuracy of     'Tanh' activation function with 4 hidden neurons is 98.0637813211845%
+Result with Eta 0.04:
+        Accuracy of  'Sigmoid' activation function with 4 hidden neurons is 93.96355353075171%
+        Accuracy of     'Tanh' activation function with 4 hidden neurons is 98.63325740318906%
+Result with Eta 0.05:
+        Accuracy of  'Sigmoid' activation function with 4 hidden neurons is 94.19134396355354%
+        Accuracy of     'Tanh' activation function with 4 hidden neurons is 98.40546697038725%
+
+The best Squashing Function is Tanh
+The best 'eta' is 0.04
+====================================================================================================
+Testing for the optimal number of neurons in the hidden layer
+
+Accuracy with 4 hidden neurons is 97.83599088838268%
+Accuracy with 3 hidden neurons is 45.21640091116173%
+Accuracy with 2 hidden neurons is 97.9498861047836%
+Accuracy with 1 hidden neurons is 99.20273348519362%
+The best number of neurons for the hidden layer is '1'
+====================================================================================================
+Testing the network on the best parameters found, on the testing set.
+
+Testing Dataset:
+      variance  skewness  curtosis   entropy
+194  -0.976426  1.782208 -0.160985 -3.043424
+622   1.621959 -0.417953 -0.207322  1.093993
+1063 -0.858751 -1.472897  1.768283  0.614995
+390  -0.280296  1.085265 -0.770328 -1.019663
+327   1.331115  1.284893 -1.468373 -1.925937
+...        ...       ...       ...       ...
+210   1.356980  1.237287 -1.393614 -1.492512
+449   1.234343 -0.888467  0.410767  1.084756
+601   0.747561  0.119219  0.105298  0.759066
+325   1.415043  0.098049 -0.085025  1.028734
+805  -1.422458  0.239129 -0.444977 -1.134173
+
+[275 rows x 4 columns]
+
+Parameters for 'Testing':
+                 1. Best Learning Rate: 0.04
+                 2. Epochs: 300
+                 3. Number of neurons in the hidden layer: 1
+                 4. Best Squashing Function: <function getHyperTangent at 0x0000016DB7D9A160>
+Accuracy with 1 hidden neurons is 99.63636363636364%
