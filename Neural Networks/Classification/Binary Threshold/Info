@@ -1,0 +1,2 @@
+This directory cointains a binary threshold neuron to discriminate between two handwritten digits.
+Both post-synaptically and pre-synaptically gated Hebb rules are used and compared.
