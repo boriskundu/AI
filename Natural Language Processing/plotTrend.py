@@ -7,7 +7,7 @@ import sys
 import matplotlib.pyplot as plt
 
 #Read data
-df = pd.read_csv('tweets_01-08-2021.csv')
+df = pd.read_csv('tweets.csv')
 
 #Extraxt year from date
 df['date'] = pd.to_datetime(df['date'])
